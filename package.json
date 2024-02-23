@@ -1,0 +1,24 @@
+{
+  "name": "github-api-playground",
+  "version": "1.0.0",
+  "description": "A thing for GitHub's API",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "cross-env ROARR_LOG=true node src/index.js | pnpm exec roarr pretty-print",
+    "lint": "eslint src"
+  },
+  "type": "module",
+  "keywords": [],
+  "author": "Neko Boi Nick <950594+thakyZ@users.noreply.github.com> (https://github.com/thakyz)",
+  "license": "MIT",
+  "dependencies": {
+    "@octokit/rest": "^20.0.2",
+    "@roarr/cli": "^5.12.4",
+    "cross-env": "^7.0.3",
+    "dotenv": "^16.4.5",
+    "roarr": "^7.21.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.56.0"
+  }
+}
